@@ -27,5 +27,5 @@ function prependKitten(name) {
   var newKittens = kittens.map(function(x) {
     return x;
   });
-  return newKittens.unshift(name);
+  return newKittens.shift(name);
 }
