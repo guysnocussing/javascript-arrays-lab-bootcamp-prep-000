@@ -15,3 +15,10 @@ function destructivelyRemoveLastKitten(name) {
 function destructivelyRemoveFirstKitten(name) {
   return kittens.shift();
 }
+
+function appendKitten(name) {
+  var newKittens = kittens.map(function(x) {
+    return x;
+  });
+  return newKittens.push(name);
+}
