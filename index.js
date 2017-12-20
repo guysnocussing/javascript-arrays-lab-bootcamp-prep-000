@@ -22,3 +22,10 @@ function appendKitten(name) {
   });
   return newKittens.push(name);
 }
+
+function prependKitten(name) {
+  var newKittens = kittens.map(function(x) {
+    return x;
+  });
+  return newKittens.unshift(name);
+}
